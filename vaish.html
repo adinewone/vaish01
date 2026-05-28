@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फक्त माझ्या वैष्णवीसाठी ❤️🫶</title>
+    <style>
+        /* Premium Dreamy & Lovable UI Stylesheet */
+        * {
+            box-sizing: border-box;
+            user-select: none;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff0f6 0%, #ffdeeb 50%, #fcc2d7 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Floating background elements */
+        .ambient-heart {
+            position: absolute;
+            font-size: 24px;
+            animation: floatUp 7s linear infinite;
+            opacity: 0.4;
+            bottom: -50px;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg) scale(0.8);
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-115vh) translateX(70px) rotate(360deg) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        /* Sparkling interactive heart trail styles */
+        .sparkle-heart {
+            position: absolute;
+            pointer-events: none;
+            font-size: 16px;
+            animation: sparkleFade 1s ease-out forwards;
+            z-index: 9999;
+        }
+
+        @keyframes sparkleFade {
+            0% {
+                transform: translate(-50%, -50%) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -100px) scale(0.3) rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        /* Main Glassmorphic Love Card */
+        .container {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 45px 35px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(255, 105, 180, 0.25), 
+                        inset 0 0 20px rgba(255, 255, 255, 0.6);
+            text-align: center;
+            max-width: 520px;
+            width: 92%;
+            border: 2px solid rgba(255, 105, 180, 0.4);
+            z-index: 10;
+            position: relative;
+            animation: cardEntrance 1.2s ease-out;
+        }
+
+        @keyframes cardEntrance {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Pulsing main heart crown */
+        .heart-crown {
+            font-size: 55px;
+            margin-bottom: 5px;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.12); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            color: #d61f62;
+            font-size: 30px;
+            margin: 10px 0 25px 0;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 2px 4px rgba(214, 31, 98, 0.15);
+        }
+
+        /* Beautiful Typography for Marathi Verses */
+        .poem-wrapper {
+            background: rgba(255, 240, 245, 0.6);
+            padding: 30px 20px;
+            border-radius: 20px;
+            border: 1px dashed #ff85b3;
+            margin-bottom: 35px;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .poem-box {
+            font-size: 21px;
+            line-height: 1.8;
+            color: #3d3d3d;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            opacity: 1;
+        }
+
+        /* Lovable Bouncy Refresh Button */
+        .refresh-btn {
+            background: linear-gradient(135deg, #ff3366 0%, #ff66a3 100%);
+            color: white;
+            border: none;
+            padding: 16px 45px;
+            font-size: 19px;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(255, 51, 102, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(255, 51, 102, 0.6);
+        }
+
+        .refresh-btn:active {
+            transform: translateY(1px) scale(0.98);
+        }
+
+        /* Footer Tag */
+        .signature {
+            font-size: 13px;
+            color: #b56584;
+            margin-top: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ambient-container"></div>
+
+    <div class="container">
+        <div class="heart-crown">🥰</div>
+        <h1>फक्त माझी वैष्णवी... ✨</h1>
+        
+        <div class="poem-wrapper">
+            <div class="poem-box" id="poemDisplay">
+                दूर असलो तरी, मनाच्या अगदी जवळ आहेस,<br>
+                माझ्या प्रत्येक सुखाचा, तूच तर खरा अर्थ आहेस.<br>
+                वैष्णवी, तू फक्त माझी होणारी बायको नाहीस,<br>
+                माझं संपूर्ण जग, माझं आयुष्य आहेस! ✨
+            </div>
+        </div>
+
+        <button class="refresh-btn" onclick="getNewPoem()">
+            Next Surprise 💖
+        </button>
+        
+        <div class="signature">MADE WITH LOVE BY ADITYA</div>
+    </div>
+
+    <script>
+        // Mega Library of 30 Cute, Rhyming, and Lovable Marathi Poems
+        const poems = [
+            `दूर असलो तरी, मनाच्या अगदी जवळ आहेस,<br>माझ्या प्रत्येक सुखाचा, तूच तर खरा अर्थ आहेस.<br>वैष्णवी, तू फक्त माझी होणारी बायको नाहीस,<br>माझं संपूर्ण जग, माझं आयुष्य आहेस! ✨`,
+            
+            `तुझ्या एका क्युट स्माईलने माझा अख्खा दिवस उजळतो,<br>आदित्य फक्त आणि फक्त तुझ्याच प्रेमात पडतो.<br>अंतर कितीही असो आपल्या दोन शहरांमध्ये,<br>माझा प्रत्येक श्वास तुझीच वाट पाहत असतो! 🌸📱`,
+            
+            `आई-वडिलांच्या आशिषाने वैष्णवी मला लाभली,<br>अन् तिच्या येण्याने माझ्या आयुष्याची कळी खुलली.<br>आता एकच इच्छा आहे देवाकडे,<br>तुжняच सोबत सुखात जावो माझी जिंदगी सगळी! 💍❤️`,
+            
+            `मॅगी बनवायला लागतात फक्त दोन मिनिटं, अन् चहा देतो भारी फील,<br>पण वैष्णवी तुझ्या क्युट स्वभावावर माझा जीव झालाय सील!<br>तू सोबत असली की कठीण रस्ताही सोपा वाटतो,<br>तुझ्याशिवाय हा आदित्य अगदी अपूर्ण राहतो! ☕✨`,
+            
+            `कधी कधी खूप आठवण येते तुझी, तेव्हा फोटो तुझा पाहतो,<br>तुझ्याशी बोलल्याशिवाय माझा एकही दिवस नाही जात.<br>वैष्णवी, तू माझं हसणं आहेस आणि माझं जगणंही,<br>तुझ्या हातात हात देऊन आता चालायचंय आयुष्यभरात! 🌹🤝`,
+            
+            `तुझ्या क्युट आणि गोड रागावण्यावरही माझं प्रेम आहे,<br>माझ्या या छोट्याशा हृदयात फक्त तुझीच फ्रेम आहे.<br>तू काळजी घेत जा स्वतःची माझ्यासाठी,<br>कारण माझ्या आयुष्याची खरी राणी फक्त तूच आहेस! 👑💖`,
+            
+            `वानखेडेच्या मैदानात खेळत होतो क्रिकेट,<br>पण वैष्णवीला पाहिलं अन् पडली माझी विकेट!<br>तूच माझी गुगली अन् तूच माझा सिक्सर,<br>आपली जोडी जगात भारी, एकदम परफेक्ट फिक्सर! 🏏🥰`,
+            
+            `आई-वडिलांच्या आशीर्वादाने वैष्णवीशी मन जुळलं,<br>अन् तिच्या क्युट येण्याने माझं भाग्य खऱ्या अर्थाने खुललं.<br>तू हसत राहा नेहमी, हीच एक इच्छा,<br>माझ्या आयुष्यात आल्याबद्दल तुला खूप साऱ्या पप्प्या! 😘🍀`,
+            
+            `हसताना तुझ्या गालावर पडते छान खळी,<br>तुला पाहताच आदित्यच्या मनाची उमलते कळी.<br>दूर असलो तरी रोज तुझाच ध्यास असतो,<br>माझ्या प्रत्येक विचारात फक्त तुझाच सहवास असतो! 🌹💫`,
+            
+            `मोठ्यांच्या आशीर्वादाने वैष्णवी माझ्या आयुष्यात आली,<br>अन् तिच्या क्युट स्वभावाने माझी दुनियाच बदलून गेली.<br>भविष्याचा प्रत्येक रस्ता तुझ्या सोबतीने पार करायचाय,<br>मला आयुष्यभर फक्त तुझ्याच हृदयात राहायचाय! 🏛️💞`,
+            
+            // New Poem 11
+            `कॉलवर तुझा आवाज ऐकला की सगळा ताण पळून जातो,<br>तुझ्याशी चॅट करताना हा आदित्य स्वतःला विसरून जातो.<br>वैष्णवी, तू दूर राहूनही माझ्या इतकी जवळ आहेस,<br>माझ्या चेहऱ्यावरच्या हसण्याचं एकमेव कारण आहेस! 📞💖`,
+            
+            // New Poem 12
+            `तुझे डोळे सुंदर, तुझा स्वभाव एकदम क्युट आहे,<br>माझ्या आयुष्यात तुझ्या प्रेमाचा गोड सुळसुळात आहे.<br>लोकांचं माहीत नाही पण माझ्यासाठी तू माझी परी आहेस,<br>वैष्णवी, तू या आदित्यची सर्वात गोड डायरी आहेस! 📖😇`,
+            
+            // New Poem 13
+            `कधी ऑनलाईन तर कधी ऑफलाईन, खेळ आपला चालतो,<br>तुझ्या एका मेसेजसाठी हा जीव सारखा तुटतो.<br>वैष्णवी, लवकरच संपेल हे शहरांचं अंतर,<br>आपल्या प्रेमावर चालणार नाही जगाचं कोणतंही मंतर! ✈️❤️`,
+            
+            // New Poem 14
+            `माझ्या सुखाच्या पानावर नाव फक्त तुझं कोरलंय,<br>हृदयाच्या गाभाऱ्यात मी तुलाच जपून ठेवलंय.<br>वैष्णवी, तू फक्त माझी होणारी बायको नाहीस,<br>माझ्या आयुष्याला लाभलेली सुंदर देणगी आहेस! 🌸💎`,
+            
+            // New Poem 15
+            `तुझ्याशी बोलल्याशिवाय माझी रात्र होत नाही संपत,<br>तुझ्या क्युट आठवणींची मनात सुरू असते गंमत.<br>आदित्यच्या आयुष्यात तुझी जागा कोणीच घेऊ शकत नाही,<br>तुझ्या इतकं सुंदर मला जगात कोणीच वाटत नाही! 🌃✨`,
+            
+            // New Poem 16
+            `आई-वडिलांच्या संमतीने मिळाली तुझी प्रेमळ साथ,<br>आता कधीच सोडणार नाही वैष्णवी तुझा हातातला हात.<br>सुख असो वा दुःख, आपण सोबत हसणार आहोत,<br>एकमेकांच्या सोबतीने संपूर्ण जग जिंकणार आहोत! 🤝🌟`,
+            
+            // New Poem 17
+            `चांदण्या रात्री चंद्रही फिका वाटतो तुझ्या रूपापुढे,<br>माझं सारं शहाणपण हरवून जातं तुझ्या क्युट हट्टापुढे.<br>वैष्णवी, तू माझ्या आयुष्यात आनंद घेऊन आलीस,<br>माझ्या रिकाम्या मनाला प्रेमाने भरून गेलीश! 🌙💕`,
+            
+            // New Poem 18
+            `लोक म्हणतात प्रेम काय असतं, मी त्यांना तुझं नाव सांगतो,<br>तुझ्या एका एका क्युट आठवणीत मी दिवस-रात्र जागतो.<br>आदित्यचा हा जीव फक्त तुझ्यासाठीच धडकतो,<br>कारण तूच आहेस जी मला जीवापाड आवडते! 💓🕺`,
+            
+            // New Poem 19
+            `हृदयाच्या प्रत्येक कोपऱ्यात तुझीच चालते सत्ता,<br>माझ्या आनंदाचा तूच आहेस खरा पत्ता.<br>वैष्णवी, लग्न करून कधी येशील माझ्या घरी,<br>तुला ठेवेन मी एकदम लाडक्या राणी परी सारखी! 👑🏡`,
+            
+            // New Poem 20
+            `चॉकलेटपेक्षाही गोड आहे तुझा हा क्युट बोलणं,<br>मनाचं मन मोकळं करून तुझ्याशी सुख-दुःख शेअर करणं.<br>दूर असलो तरी आपलं प्रेम कधीच कमी होणार नाही,<br>माझ्या इतकं प्रेम तुला जगात दुसरं कोणी करणार नाही! 🍫❤️`,
+            
+            // New Poem 21
+            `माझ्या दिवसाची सुरुवात आणि रात्रीचा शेवट तू आहेस,<br>माझ्या सुखाच्या प्रवासातली सर्वात गोड वळण तू आहेस.<br>वैष्णवी, तू जेव्हा लाजतेस ना तेव्हा खूप सुंदर दिसतेस,<br>माझ्या मनात तू कायम घर करून राहतेस! 😊🌹`,
+            
+            // New Poem 22
+            `घरच्यांच्या आशिषाने आपली सुंदर जोडी जमली,<br>आदित्यच्या आयुष्यात साक्षात लक्ष्मीच पाऊल ठेवून आली.<br>वैष्णवी, तुझी प्रत्येक इच्छा पूर्ण करायची जबाबदारी माझी,<br>कारण तूच तर आहेस माझ्या जगण्याची खरी ताकद साजी! ⚡💍`,
+            
+            // New Poem 23
+            `फोनवर येणारा तुझा रिंगटोन मनाला सुखावून जातो,<br>तुझा हसरा चेहरा पाहून माझा सगळा थकवा निघून जातो.<br>कितीही अंतर असलं तरी मनात कायम तुझीच आठवण आहे,<br>कारण वैष्णवी, तूच माझ्या प्रेमाची सर्वात मोठी साठवण आहे! 🎵💝`,
+            
+            // New Poem 24
+            `रुसणं तुझं क्युट आहे, आणि मनावणं माझं कर्तव्य आहे,<br>आपल्या या गोड नात्यातच तर जगण्याचं खरं रहस्य आहे.<br>आदित्य फक्त तुझा आहे आणि तुझाच राहणार कायम,<br>मनातलं तुझं स्थान कधीच होणार नाही मध्यम! 🎯💞`,
+            
+            // New Poem 25
+            `तुझ्या हातचा चहा पिण्याची खूप मोठी इच्छा आहे मनात,<br>तुझ्यासोबत संसार थाटायचा आहे या सुंदर जगात.<br>वैष्णवी, तू माझ्या आयुष्यातलं सर्वात गोड गोड स्वप्न आहेस,<br>जे आता प्रत्यक्षात खूप लवकर खरं होणार आहे! ☕🌈`,
+            
+            // New Poem 26
+            `तुझ्या चेहऱ्याचा क्युट निष्पापपणा माझ्या मनाला भावतो,<br>तुला खुश ठेवण्यासाठी हा आदित्य काहीही करू शकतो.<br>दूर राहूनही आपण एकमेकांच्या किती जवळ आलोय ना,<br>आपल्या या नात्याला देवाचाही गोड आशीर्वाद लाभलाय ना! 🙏✨`,
+            
+            // New Poem 27
+            `मनात एकच घर आहे आणि त्यात फक्त तुझाच मुक्काम आहे,<br>माझ्या प्रत्येक धडकनवर फक्त वैष्णवी तुझं नाव आहे.<br>तू काळजी घेत जा स्वतःची माझ्यासाठी नेहमी,<br>कारण तूच आहेस या आदित्यच्या आयुष्याची खरी स्वामी! ❤️🧿`,
+            
+            // New Poem 28
+            `तुझ्या मेसेजची वाट पाहताना मोबाईल स्क्रीनकडे सारखा पाहतो,<br>तुझा 'Good Morning' आला की माझा दिवस एकदम भारी जातो.<br>क्युट वैष्णवी, तू माझ्या जगण्याची पद्धत बदलली आहेस,<br>माझ्या साध्या आयुष्याला तू एकदम स्पेशल बनवली आहेस! 📱☀️`,
+            
+            // New Poem 29
+            `क्रिकेटच्या मैदानात लागतात सिक्सर आणि चौकार,<br>पण तुझ्या क्युट लुकने केला माझ्या मनावर थेट वार!<br>वैष्णवी, तू क्लीन बोल्ड केलंस मला पहिल्याच नजरेत,<br>आता जन्मभर राहायचंय मला फक्त तुझ्याच प्रेमाच्या छत्रछायेत! 🏏💘`,
+            
+            // New Poem 30
+            `आई-वडिलांच्या साक्षीने आणि मोठ्यांच्या गोड आशीर्वादाने,<br>आदित्यने आपलं भविष्य सूपूर्द केलंय वैष्णवीच्या साथीने.<br>हे नातं आपलं साताजन्माचं असंच सुंदर बहरत राहील,<br>आपलं प्रेम पाहून अवघं जग कौतुकाने पाहत राहील! 🌟💍`
+        ];
+
+        let lastIndex = 0;
+
+        // Function to smoothly transition into a fresh random poem
+        function getNewPoem() {
+            const poemDisplay = document.getElementById('poemDisplay');
+            poemDisplay.style.opacity = 0;
+            poemDisplay.style.transform = "scale(0.95)";
+            
+            setTimeout(() => {
+                let randomIndex;
+                // Double check loop to guarantee no repeat text on single clicks
+                do {
+                    randomIndex = Math.floor(Math.random() * poems.length);
+                } while (randomIndex === lastIndex);
+                
+                lastIndex = randomIndex;
+                poemDisplay.innerHTML = poems[randomIndex];
+                poemDisplay.style.opacity = 1;
+                poemDisplay.style.transform = "scale(1)";
+            }, 400);
+        }
+
+        // Generate gentle floating screen assets (Hearts and Emojis)
+        function createAmbientParticle() {
+            const container = document.getElementById('ambient-container');
+            const particle = document.createElement('div');
+            particle.classList.add('ambient-heart');
+            
+            const loveArray = ['❤️', '💖', '💕', '💗', '✨', '🌸', '🥰'];
+            particle.innerText = loveArray[Math.floor(Math.random() * loveArray.length)];
+            
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = Math.random() * 3 + 5 + 's'; 
+            particle.style.fontSize = Math.random() * 15 + 16 + 'px';
+            
+            container.appendChild(particle);
+            
+            // Cleanup to save memory
+            setTimeout(() => { particle.remove(); }, 7000);
+        }
+        setInterval(createAmbientParticle, 400);
+
+        // Interactive Cursor/Tap Magic Sparkle Trail
+        window.addEventListener('mousemove', function(e) {
+            // Limits performance overhead slightly
+            if(Math.random() > 0.15) return; 
+            spawnSparkle(e.clientX, e.clientY);
+        });
+
+        window.addEventListener('touchmove', function(e) {
+            if(Math.random() > 0.15) return;
+            let touch = e.touches[0];
+            spawnSparkle(touch.clientX, touch.clientY);
+        });
+
+        function spawnSparkle(x, y) {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle-heart');
+            
+            const trailElements = ['❤️', '💖', '✨', '💕', '🌸'];
+            sparkle.innerText = trailElements[Math.floor(Math.random() * trailElements.length)];
+            
+            sparkle.style.left = x + 'px';
+            sparkle.style.top = y + 'px';
+            
+            document.body.appendChild(sparkle);
+            setTimeout(() => { sparkle.remove(); }, 1000);
+        }
+    </script>
+</body>
+</html>
